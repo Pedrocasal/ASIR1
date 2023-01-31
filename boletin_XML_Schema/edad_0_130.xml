@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/D:/pedrocm/MARCAS/ud4/xsd/edad%20entre%200%20y%20130%20a%C3%B1os/edad_0_130.xsd">
+   <ficha numero="1">
+      <nombre>Ana Sanz Tin</nombre>
+      <edad>22</edad>
+   </ficha>
+   <ficha numero="2">
+      <nombre>Iker Rubio Mol</nombre>
+      <edad>23</edad>
+   </ficha>
+</fichas>

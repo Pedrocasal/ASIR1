@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="aeropuerto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string">
+        </xs:element>
+        <xs:element name="vuelos">
+          <xs:complexType>
+           <xs:sequence>
+              <xs:element name="vuelo" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="diario" minOccurs="0">
+                    </xs:element>
+                    <xs:element name="origen" type="xs:string">
+                    </xs:element>
+                    <xs:element name="destino" type="xs:string">
+                    </xs:element>
+                    <xs:element name="hora-salida" type="xs:time">
+                    </xs:element>
+                    <xs:element name="hora-llegada" type="xs:time">
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="código" type="xs:string"></xs:attribute>
+                  <xs:attribute name="estado" type="xs:string"></xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="fecha" type="xs:date">
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

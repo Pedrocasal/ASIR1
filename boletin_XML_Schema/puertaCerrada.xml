@@ -1,0 +1,3 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:element name="puertaCerrada" type="xs:booelan" default="false"></xs:element>
+<xs:element name="puertaAbierta" type="xs:boolean" default="true"></xs:element>
