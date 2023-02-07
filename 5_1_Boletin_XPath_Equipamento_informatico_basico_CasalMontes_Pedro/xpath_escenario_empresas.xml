@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<empresa> 
+ <departamento cod_dep="cont">
+  <telefono>981111111</telefono>
+  <nome>contabilidade</nome>
+  <empregado cod_emp="cont_001">
+   <nome>Xose</nome>
+   <dni>11111111A</dni>
+   <salario>4100</salario>
+  </empregado> 
+ <empregado cod_emp="cont_002">
+  <nome>Alba</nome>
+  <dni>22222222B</dni>
+  <salario>8100</salario>
+ </empregado> 
+</departamento> 
+
+ <departamento cod_dep="publ">
+  <telefono>982222222</telefono>
+  <nome>publicidade</nome>
+  <empregado cod_emp="publ_001">
+   <nome>Xoana</nome>
+   <dni>33333333C</dni>
+   <salario>1200</salario>
+  </empregado> 
+  <empregado cod_emp="publ_002">
+   <nome>Brais</nome>
+   <dni>44444444D</dni>
+   <salario>3100</salario>
+  </empregado> 
+ </departamento> 
+</empresa>
