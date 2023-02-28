@@ -1,0 +1,61 @@
+1- 
+for $tutoriales in //categoria
+return $tutoriales
+
+2-
+for $a in /tutoriales/tutorial
+return <b>{$a/titulo/text()," (",$a/visitas/text(),")"}</b>
+
+3-
+for $a in /tutoriales/tutorial
+return <titulo> {if ($a/visitas < 2000) then ($a/titulo/text())else()}</titulo>
+
+4-
+for $a in /tutoriales/tutorial
+return <z>{if ($a/visitas/text() > 30000) then $a/titulo/text() else()}</z>
+
+5-
+let $a:=/tutoriales/tutorial/visitas
+return <z>{sum($a)}</z>
+
+6-
+for $a in distinct-values(/tutoriales/tutorial/categoria)
+return <z>{$a}</z>
+
+7-
+for $a in /tutoriales/tutorial
+order by $a/autor/nombre ascending
+return	<autores>
+           <nombreyapellidos>
+             {$a/autor/nombre/text()," ", $a/autor/apellidos/text()}
+           </nombreyapellidos>
+           <titulo>
+             {$a/titulo/text()}
+           </titulo>
+        </autores>
+        
+8-
+let $a:=/tutoriales/tutorial/visitas
+return <z>{avg($a)}</z>
+
+9-
+let $a:=/tutoriales/tutorial
+return <z>{count($a)}</z>
+
+10-
+for $a in /tutoriales/tutorial
+order by $a/categoria/text() ascending
+return <z>{$a/titulo," ", $a/categoria}</z>
+
+11-
+for $a in /tutoriales/tutorial
+return <z>{"titulo: ",$a/titulo/text()," | autor: nombre: ", $a/autor/nombre/text(), " apellidos: ",$a/autor/apellidos/text(), " | categoria: ",$a/categoria/text()}</z>
+
+12-
+for $a in /tutoriales/tutorial
+return <table>
+<tr>
+<td>{$a/titulo/text()}</td>
+<td>{$a/autor/nombre/text()}</td>
+</tr>
+</table>
